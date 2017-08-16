@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+   <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js"></script>
+   
+
+
+  </head>
+<div id="root"/>
+  <script type="text/babel">
+
+
+// here we have defined the comonent
+class Demographics extends React.Component{
+   render()
+    {
+        return(
+            <div>
+       
+           <form>
+  <label>First Name:
+    <input type="text" name="fname" id="fname"/>
+ </label>
+   <label>Last Name:
+    <input type="text" name="lname" id="lname"/>
+ </label>
+    <label>DOB:
+    <input type="text" name="dob" id="dob"/>
+ </label>
+  <input type="submit" value="Submit" />
+</form>
+</div>
+        );
+    }
+}
+
+class SearchPatient extends React.Component{
+
+    render()
+    {
+        return(
+            <div>
+                <h1>Health Assessment System</h1>
+             </div>   
+
+        );
+    }
+}
+
+
+class Patient1 extends React.Component{
+
+    render()
+    {
+        return(
+            <div>
+                <SearchPatient/>
+                <Demographics fname={this.props.fname} lname={this.props.lname}/>
+             </div>   
+
+        );
+    }
+}
+
+class Patient extends React.Component{
+ 
+ 
+}
+
+//now we should render the Component
+
+//    const element = <Patient fname="nitesh" lname="chawla" />;
+const element = <Patient1 fname="nitesh" lname="chawla" />;
+
+    ReactDOM.render(element,document.getElementById('root')); 
+
+
+  </script>
+  <body>

@@ -1,0 +1,29 @@
+{
+  "name": "nodeprojects",
+  "version": "1.0.0",
+  "description": "node projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suntwin/nodeProjects.git"
+  },
+  "keywords": [
+    "google",
+    "cloud",
+    "node",
+    "projects"
+  ],
+  "author": "nitesh chawla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suntwin/nodeProjects/issues"
+  },
+  "homepage": "https://github.com/suntwin/nodeProjects#readme",
+  "dependencies": {
+    "google-cloud": "^0.56.0",
+    "promise": "^8.0.1"
+  }
+}
