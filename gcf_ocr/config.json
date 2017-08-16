@@ -1,0 +1,8 @@
+{
+  "RESULT_TOPIC": "result_topic",
+  "IMAGE_BUCKET": "nitesh_test12",
+  "TRANSLATE_TOPIC": "translate_topic",
+  "TRANSLATE": true,
+  "TO_LANG": ["en", "fr", "es", "ja", "ru"]
+}
+
